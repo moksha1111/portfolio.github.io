@@ -23,7 +23,7 @@
     "js-cookie": "^3.0.1",
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.2",
-    "tracer": "^1.1.6"
+    "tracer": "^0.8.15"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
