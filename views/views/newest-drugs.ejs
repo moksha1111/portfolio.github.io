@@ -1,0 +1,33 @@
+<div class="container newestDrugs">
+  <div class="row">
+    <h3>Newest Drugs:</h3>
+    <% if(drug != ''){ %>
+      <% drug.forEach(function(drug, index){ %>
+        <div class="col-3 text-center">
+          <a href="/drugs/<%= drug._id %>">
+            <div>
+              <img class="category__img" src="./images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+            </div>
+            <div class="drugName">
+              <%= drug.name %>
+            </div>
+          </a> 
+      </div>
+      <% }) %>
+    <% } else { %>
+      <p>No drugs found.</p>
+    <% } %>
+  </div>
+</div>
+
+<%- contentFor('head') %>
+<%- include("../partials/head.ejs") %>
+
+<%- contentFor('header') %>
+<%- include('../partials/header.ejs') %>
+
+<%- contentFor('footer') %>
+<%- include("../partials/footer.ejs") %>
+
+<%- contentFor('globalscript') %>
+<%- include("../partials/globalscript.ejs") %>

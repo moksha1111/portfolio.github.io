@@ -1,0 +1,66 @@
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 bg-transparent" id="header">
+
+  <i class="far fa-arrow-alt-circle-up fa-4x arrowForGoingTop" id="mybtn"></i>
+
+  <a href="/drugs" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none logo">
+    <img src="/images/Creative-Tail-medicine.svg" alt="Bootstrap" width="70" height="70">
+  </a>
+
+  <ul class="nav col-12 col-md-auto mb-2 text-center mb-md-0 links" id="navbar">
+    <li><a href="/drugs" class="nav-link px-2 link-secondary home">Home</a></li>
+    <li class="dropdown">
+      <a href="/categories" class="nav-link px-2 link-secondary dropme">Categories<i class="bi bi-caret-right-fill"></i></a>
+      <ul class="dropdown-content categoriesContent" style="text-align: left; background: #80b9bf;">
+        <% if(categories2 != '') { %>
+          <% categories2.forEach(function(category, index) { %>
+          <div class="categoriesList">
+            <li><a href="/categories/<%- category.name %>" class="px-2 link-secondary accInfo"><%- category.name %></a></li>
+          </div>
+          <% }) %>
+        <% } %>
+      </ul>
+    </li>
+    <li><a href="/alldrugs" class="nav-link px-2 link-secondary">Products</a></li>
+    <li><a href="/about" class="nav-link px-2 link-secondary">About</a></li>
+    <div class="col-md-3 text-end search">
+      <form method="POST" action="/search">
+        <input type="search" name="searchTerm" autocomplete=off class="form-control" placeholder="Search..." aria-label="Search">
+      </form>
+    </div>
+  </ul>
+
+  <div class="col-md-3 text-end authenication">
+    <% if(session.length > 0) { %>
+      <a href="/cart">
+        <button type="button" class="btn btn-primary dropme2"><i class="fa-solid fa-cart-shopping"></i>Cart</button>
+      </a>
+      <li class="dropdown account">
+        <a>
+          <button type="button" class="btn btn-primary dropme" id="btnAccount">Welcome, <%- info.firstname  %><i class="bi bi-caret-right-fill"></i></button>
+        </a>
+        <ul class="dropdown-content accountContent" style="text-align: left; background: #80b9bf;">
+          <div class="myAccount firstElement">
+            <li><a href="/account" class="px-2 link-secondary accInfo">My Account</a></li>
+          </div>
+          <div class="myAccount">
+            <li><a href="/" class="px-2 link-secondary accInfo">My Orders</a></li>
+          </div>
+          <div class="myAccount">
+            <li><a href="/" class="px-2 link-secondary accInfo">Saved Items</a></li>
+          </div>
+          <div class="myAccount lastElement">
+            <li><a class="px-2 link-secondary accInfo" id="btnLogout" style="display: block;">Sign Out</a></li>
+          </div>
+        </ul>
+      </li>
+    <% } else { %>
+      <a href="/signup">
+        <button type="button" class="btn btn-primary">Sign up</button>
+      </a>
+      <a href="/login">
+        <button type="button" class="btn btn-primary">Login</button>
+      </a>
+    <% } %>
+  </div>
+
+</header>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header .navbar a {
+  margin-left: 30px;
+  color: #474747;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+header .navbar a:hover,
+header .navbar a.active {
+  background-color: #017143;
+  color: white;
+
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .home-content h2 {
+  font-size: 90px;
+  font-weight: 500;
+  color: #474747;
+}
+
+section .home-content h2 span {
+  font-size: 120px;
+  color: #017143;
+  font-weight: bold;
+  line-height: 130px;
+}
+
+section .home-content p {
+  width: 75%;
+}
+
+section .home-content a {
+  background: #017143;
+  color: white;
+  padding: 8px 15px;
+  margin-top: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+section .home-image {
+  width: 60%;
+}
+
+section .home-image img {
+  width: 100%;
+}
+
+section .thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  display: flex;
+  transform: translateX(-150px);
+}
+
+section .thumb li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 30px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: .3s;
+}
+
+section .thumb li:hover {
+  transform: scale(1.5);
+}
+
+section .thumb li img {
+  max-width: 50px;
+}
+
+section .home-sci {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .home-sci a {
+  margin: 10px 0
+}
+
+section .home-sci a i {
+  margin: 5px 0;
+  transform: scale(1);
+  transition: .3s;
+  font-size: 30px;
+  color: white;
+}
+
+section .home-sci a i:hover {
+  transform: scale(1.5);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #017143;
+  z-index: -1;
+  clip-path: circle(800px at right 1000px);
+}

@@ -1,0 +1,54 @@
+<div class="container categoriesPage">
+  <div class="row">
+    <% if(typeof categories !== 'undefined' && categories.length > 0) { %>
+      <h3>Categories:</h3>
+      <% categories.forEach(function(category, index) { %>
+      <div class="col-3 text-center">
+        <a href="/categories/<%- category.name %>">
+          <div>
+            <img class="category__img" src="./images/<%- category.image %>" alt="<%- category.name %>" loading="lazy">
+          </div>
+          <div class="categoryName">
+            <%- category.name %>
+          </div>
+        </a>
+      </div>
+      <% }) %>
+    <% } %>
+  </div>
+</div>
+
+
+
+<div class="container categoryDrugs">
+  <div class="row"> 
+
+    <% if(typeof categoryById !== 'undefined' && categoryById.length > 0) { %>
+      <h3><%- categoryById[0].category %></h3>
+      <% categoryById.forEach(function(drug, index){ %>
+          <div class="col-3 text-center">
+            <a href="/drugs/<%= drug._id %>">
+              <div>
+                <img class="category__img" src="/images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+              </div>
+              <div class="drugName">
+                <%= drug.name %>
+              </div>
+            </a> 
+        </div>
+      <% }) %>
+    <% } %>
+  </div>
+</div>
+
+<%- contentFor('head') %>
+<%- include("../partials/head.ejs") %>
+
+<%- contentFor('header') %>
+<%- include('../partials/header.ejs') %>
+
+<%- contentFor('footer') %>
+<%- include("../partials/footer.ejs") %>
+
+<%- contentFor('globalscript') %>
+<%- include("../partials/globalscript.ejs") %>

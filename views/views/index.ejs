@@ -1,0 +1,88 @@
+<!-- START OF BACKGROUND -->
+
+<div class="background">
+  <h1>High Quality Drugs</h1>
+</div>
+
+<!-- End OF BACKGROUND -->
+
+<!-- START OF Categories -->
+
+<div class="container categories box show">
+  <div class="row">
+
+    <h3>
+      Categories:
+    </h3>
+
+    <% if(categories != '') { %>
+      <% categories.forEach(function(category, index) { %>
+      <div class="col-3 text-center">
+        <a href="/categories/<%- category.name %>">
+          <div>
+            <img class="category__img" src="./images/<%- category.image %>" alt="<%- category.name %>" loading="lazy">
+          </div>
+          <div class="categoryName">
+            <%- category.name %>
+          </div>
+        </a>
+      </div>
+      <% }) %>
+    <% } %>
+
+    <div class="col-3 text-center">
+      <a href="/categories">
+        <div>
+          <img class="category__img" src="./images/viewall.jpg" alt="allcategories" loading="lazy">
+        </div>
+        <div class="categoryName">
+          View All
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- End OF Categories -->
+
+<!-- Start OF Newest Drugs -->
+
+<div class="container newest-drugs box show">
+  <div class="row"> 
+    <div class="d-flex mb-2 align-items-center">
+      <h3>Newest Products:</h3>
+      <a href="newest-drugs" class="ms-auto vm">View More</a>
+    </div>
+      <% if(newestDrugs != ''){ %>
+        <% newestDrugs.newest.forEach(function(drug, index){ %>
+          <div class="col-3 text-center">
+            <a href="/drugs/<%= drug._id %>">
+              <div>
+                <img class="category__img" src="./images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+              </div>
+              <div class="drugName">
+                <%= drug.name %>
+              </div>
+            </a> 
+        </div>
+        <% }) %>
+      <% } else { %>
+        <p>No drugs found.</p>
+      <% } %>
+  </div>
+</div>
+
+<!-- End OF Newest Drugs -->
+
+<%- contentFor('head') %>
+<%- include("../partials/head.ejs") %>
+
+<%- contentFor('header') %>
+<%- include('../partials/header.ejs') %>
+
+<%- contentFor('footer') %>
+<%- include("../partials/footer.ejs") %>
+
+<%- contentFor('globalscript') %>
+<%- include("../partials/globalscript.ejs") %>

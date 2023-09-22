@@ -1,0 +1,375 @@
+a:hover {
+  color:rgb(3, 10, 110) !important;
+}
+
+a.freetrial:hover {
+  color: #fc4c00 !important;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  margin-left: 100px;
+}
+
+.search {
+  padding: 6px;
+  color: #ff6a00;
+}
+
+.search svg {
+  cursor: pointer;
+}
+
+.search svg:hover {
+  color: #fc4c00;
+}
+
+.search2 {
+  padding: 6px;
+  color: #ff6a00;
+}
+
+.user {
+  padding: 6px;
+  color: #ff6a00;
+}
+
+svg.bi-play-btn {
+  cursor: pointer;
+}
+
+.navbar-nav {
+  margin-right: 100px;
+  flex-direction: row;
+}
+
+.navbar-nav > li {
+  padding-left: 20px;
+}
+
+.freetrial {
+  color: #ff6a00;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #2f3796;
+}
+
+.navbar-light .navbar-nav .EN {
+  color: #ff6a00;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #ff6a00;
+}
+
+.ODA {
+  background: url(/images/projects/project6/contactus.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.ODA .new {
+  color: white;
+  background: rgba(19 17 60 / 89%);
+  min-height: 800px;
+}
+
+.ODA h1 {
+  padding-top: 150px;
+}
+
+.ODA p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+  line-height: 0.1em;
+}
+
+.ODA p span {
+  background: #121749;
+  padding: 0 10px;
+}
+
+.ODA .trusted-edit img {
+  padding-top: 10px;
+}
+
+.ODA .whatisoda {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.container {
+  padding-top: 65px;
+}
+
+#live {
+  position: absolute;
+  right: 140px;
+  top: 63px;
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+  height: 44px;
+  width: 115px;
+  border-radius: 5%;
+  border: 0;
+}
+
+#live:hover {
+  background-color: #fc4c00
+}
+
+.forlvl .row {
+  padding-top: 50px;
+}
+
+.forlvl .row h5 {
+  padding-top: 30px;
+}
+
+.forlvl .row .lvl #two {
+  color: rgb(0, 38, 255);
+}
+
+.forlvl .row .lvl svg {
+  color: #fc4c00;
+}
+
+.forlvl .row .lvl p {
+  padding-top: 5px;
+}
+
+.forlvl .row .lvl #two {
+  padding-top: 15px;
+}
+
+.mySlides .lvl svg {
+  color: #fc4c00;
+  margin-bottom: 30px;
+}
+
+.mySlides .lvl #two {
+  color: rgb(0, 38, 255);
+}
+
+.slideshow-container h3 {
+  padding-top: 20px;
+}
+
+.third {
+  background: url(/images/projects/project6/odabackground2.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.third .th3rd {
+  padding-top: 20px;
+  margin-top: 50px;
+  color: white;
+  background: rgba(41 17 60 / 64%);
+  min-height: 400px;
+}
+
+.third .lvl span {
+  color: red;
+  text-decoration: underline;
+}
+
+.fourth {
+  background: url(/images/projects/project6/odabackground3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.fourth .fourth4 {
+  padding-top: 20px;
+  color: white;
+  background: rgba(4 3 24 / 53%);
+  min-height: 400px;
+}
+
+.fourth .fourth4 svg {
+  margin-right: 20px;
+  color: #fc4c00;
+}
+
+.fourth .fourth4 p {
+  padding-left: 37px;
+}
+
+.footer .copyright {
+  background: rgb(156 152 157);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .navbar-brand {
+    margin-left: 30px;
+  }
+  .navbar-nav {
+    margin-right: 20px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 767px) {
+  .small {
+    position: absolute;
+    left: 45%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 766px) {
+  .small {
+    position: absolute;
+    left: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .small {
+    position: absolute;
+    left: 65%;
+  }
+}
+
+@media (max-width: 1199px) {
+  #live {
+    position: absolute;
+    right: 60px;
+    top: 63px;
+    background-color: #ff6a00;
+    border-color: #ff6a00;
+    height: 44px;
+    width: 115px;
+    border-radius: 5%;
+    border: 0;
+  }
+
+  #live:hover {
+    background-color: #fc4c00;
+  }
+}
+
+@media (max-width: 991px) {
+  .ODA img {
+    padding-bottom: -50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ODA #hideinxs {
+    display: none;
+  }
+}
+
+@media (max-width: 766px) {
+  .ODA .whatisoda {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .third .th3rd .lvl {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .fourth .fourth4 p {
+    text-align: left;
+    padding-left: 37px;
+  }
+}

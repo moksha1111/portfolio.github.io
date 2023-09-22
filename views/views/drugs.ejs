@@ -1,0 +1,99 @@
+<!-- <script>var ProductQuantity = <%= drug.quantity %>;</script>  -->
+<div class="container eachDrug">
+<% if(drug != null ) { %>
+  <div class="row">
+    <div class="col-12 text-center" style="text-decoration: underline;"><h2><%- drug.name %></h1></div>
+    <div class="col-12 col-md-8">
+      <div class="row drugInfo">
+        <div class="drugIdDiv" style="display: none;"><%- drug._id %></div>
+        <div class="col-12"><h4><i class="bi bi-tag"></i>Drug Category: <%- drug.category %></h4></div>
+        <div class="col-12"><h4><i class="bi bi-tag"></i>Drug Use: <%- drug.usage %></h4></div>
+        <div class="col-12"><h4><i class="bi bi-tag"></i>Drug Price: <%- drug.price %></h4></div>
+        <div class="col-12">
+          <h4><i class="bi bi-tag"></i>Active Ingredients</h4>
+          <ul class="list-group list-group-flush">
+            <% drug.activeIngredients.forEach(function(activeIngredients, index){ %>
+              <li class="list-group-item"><%= activeIngredients %></li>
+            <% }) %>
+        </ul> 
+        </div>
+        <div class="col-12">
+          <h4><i class="bi bi-tag"></i>Side Effects</h4>
+          <ul class="list-group list-group-flush">
+            <% drug.sideEffects.forEach(function(sideEffects, index){ %>
+              <li class="list-group-item"><%= sideEffects %></li>
+            <% }) %>
+          </ul> 
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="/images/<%- drug.image %>" class="img-fluid" alt="<%- drug.name %>" loading="lazy">
+      <%
+      var styleForSingleButton = "";
+      var styleForQuantityButtons = "";
+      if (cart.length <= 0) {
+        styleForQuantityButtons = "display:none;";
+      } else {
+        styleForSingleButton = "display:none;";
+      }
+      %>
+      <% if (drug.quantity <= 5) { %>
+        <div class="col-12 text-center"><h4>Only <%- drug.quantity %> left in stock.</h4></div>
+      <% } %>
+      <a>
+        <button type="button" class="btn btn-primary dropme2 addToCart addToCartToggle"style=<%- styleForSingleButton %>>
+          <i class="fa-solid fa-cart-plus"></i>ADD TO CART
+        </button>
+      </a>
+      <a>
+        <div class="container">
+          <div class="row text-center addToCartToggle" style=<%- styleForQuantityButtons %>>
+            <div class="col-md-4">
+              <button type="button" class="btn btn-primary dropme2 qtyDecrease" style="margin-left: 102px;">
+                <i class="fa-solid fa-minus" style="margin-left: 10px;"></i></button>
+            </div>
+            <div class="col-md-4 qtyNumber" style="display:grid; align-content: center; color: #164044;">
+              <% if (cart && cart.length > 0) { %>
+              <%- cart[0].productQuantity %>
+              <% } else { // this should never be displayed %>
+              0 
+              <% } %>
+            </div>
+            <% if ((cart && cart.length > 0) && (cart[0].productQuantity >= drug.quantity)) { %>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary dropme2 qtyIncrease" style="margin-right: 102px;" disabled="">
+                  <i class="fa-solid fa-plus" style="margin-left: 10px;"></i></button>
+              </div>
+            <% } else { %>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary dropme2 qtyIncrease" style="margin-right: 102px;">
+                  <i class="fa-solid fa-plus" style="margin-left: 10px;"></i></button>
+              </div>
+            <% } %>
+
+          </div>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+<% } else { %>
+  <p>No item found.</p>
+<% } %>
+</div>
+
+<%- contentFor('head') %>
+<%- include("../partials/head.ejs") %>
+
+<%- contentFor('header') %>
+<%- include('../partials/header.ejs') %>
+
+<%- contentFor('footer') %>
+<%- include("../partials/footer.ejs") %>
+
+<%- contentFor('globalscript') %>
+<%- include("../partials/globalscript.ejs") %>
+
+<%- contentFor('script') %>
+<script src="/js/script/drugs.js"></script>

@@ -1,0 +1,415 @@
+/* h1,
+h2,
+h3,
+h4,
+.lead {
+  font-family: "Sedgwick Ave", cursive;
+} */
+
+/* button to scroll up */
+
+#mybtn {
+  position: fixed;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  bottom: 50px;
+}
+
+/* navbar */
+
+.navbar {
+  padding: 1px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  font-size: x-large;
+}
+
+/* section option box */
+
+.option-box {
+  position: fixed;
+  top: 300px;
+  left: 0;
+  z-index: 9999;
+}
+
+.option-box .color-option {
+  float: left;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  display: none;
+}
+
+.option-box .color-option ul li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.option-box .bi-gear {
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Home */
+
+.active:hover {
+  color: black;
+}
+
+/* active links  */
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffc107;
+}
+
+/* perfection website */
+.navbar-dark .navbar-brand {
+  color: #ffc107;
+  margin-left: 69px;
+}
+
+.navbar-brand {
+  font-size: 2.25rem;
+}
+
+/* dropdown */
+.dropdown-menu {
+  background-color: #343a40;
+  min-width: 13rem;
+}
+
+.dropdown-item {
+  color: white;
+  -webkit-transition: padding 0.3s ease;
+  -moz-transition: padding 0.3s ease;
+  -o-transition: padding 0.3s ease;
+  transition: padding 0.3s ease;
+}
+.dropdown-item:hover {
+  color: white;
+  padding-left: 30px;
+}
+
+/* LINKS */
+.navbar-expand-lg .navbar-collapse {
+  font-size: x-large;
+  margin-right: 67px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 25px;
+}
+
+.features {
+  background: rgb(216, 216, 216);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.feat {
+  margin-bottom: 50px;
+}
+
+/* .testimonials .carousel-indicators .active {
+  background-color: red;
+}
+
+.testimonials .carousel-indicators li {
+  background-color: #817c7c;
+}
+
+.testimonials .carousel-indicators {
+  position: static;
+  padding-top: 20px;
+} */
+
+#test li {
+  background-color: #817c7c;
+  text-indent: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 6px;
+}
+
+#test .active {
+  width: 80px;
+  height: 80px;
+}
+
+#test li img {
+  max-width: 100%;
+}
+
+#test {
+  position: static;
+  padding-top: 20px;
+}
+
+/* PRICE BOX  */
+
+.price_table {
+  background: rgb(216, 216, 216);
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.price_table .price_box {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+
+.price_table .price_box h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.price_table .price_box:hover p {
+  -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+  -moz-transform: scale(1.1, 1.1) rotate(360deg);
+  -o-transform: scale(1.1, 1.1) rotate(360deg);
+  transform: scale(1.1, 1.1) rotate(360deg);
+}
+
+#blue {
+  border: 2px solid #007bff;
+}
+
+#green {
+  border: 2px solid #28a745;
+}
+
+#dark {
+  border: 2px solid #000000;
+}
+
+#red {
+  border: 2px solid #dc3545;
+}
+
+.price_table .price_box p {
+  font-size: 35px;
+  font-weight: bold;
+  color: #666;
+  width: 100px;
+  height: 100px;
+  background: #f3f3f3;
+  border-radius: 50%;
+  line-height: 90px;
+  border: 2px solid white;
+  margin: auto;
+  margin-bottom: 10px;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+
+.price_table .price_box ul {
+  line-height: 250%;
+  font-weight: bold;
+}
+
+.price_table .price_box button {
+  margin-bottom: 10px;
+}
+
+/* our website */
+
+.our_team {
+  background: url(/images/projects/project7/wraith.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.our_team h1 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.our_team .team {
+  color: white;
+  background: rgba(2, 2, 2, 0.7);
+  min-height: 600px;
+}
+
+/* section subscribe */
+
+.subscribe {
+  background: rgb(216, 216, 216);
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.form-inline {
+  display: block;
+}
+
+/* section stats */
+
+.statistics {
+  background: url(/images/projects/project7/matrix.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.statistics .data {
+  background-color: rgb(2 2 2 / 70%);
+  color: #cccccc;
+  min-height: 600px;
+  padding-top: 1px;
+}
+
+.statistics h1 {
+  margin-bottom: 0px;
+}
+
+.statistics .stats:hover {
+  color: white;
+}
+
+.statistics p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.statistics span {
+  font-size: 15px;
+}
+
+.statistics i {
+  margin-top: 50px;
+}
+
+/* section skills */
+
+.our-skills h3 {
+  margin-top: -6px;
+}
+
+.our-skills .progress {
+  margin-bottom: 20px;
+}
+
+/* section contact us  */
+
+.contact-us {
+  background: url(/images/projects/project7/contactus.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+  margin-top: 30px;
+}
+
+.contact-us .fields {
+  background-color: rgb(2 2 2 / 70%);
+  color: #cccccc;
+  min-height: 600px;
+  padding-top: 50px;
+}
+
+.contact-us h1 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.contact-us .lead {
+  margin-bottom: 30px;
+}
+
+.contact-us .row {
+  margin-bottom: 20px;
+}
+
+.contact-us textarea {
+  height: 112px;
+}
+
+.contact-us input[type="text"],
+.contact-us textarea,
+.contact-us textarea:focus {
+  background: rgba(44 42 42 / 50%);
+  color: #fff;
+  border: none;
+}
+
+/* section our-clients  */
+
+.our-clients {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.our-clients img {
+  opacity: 0.5;
+}
+
+.our-clients img:hover {
+  opacity: 1;
+}
+
+/* footer  */
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: #aaa;
+  padding-top: 10px;
+}
+
+.footer .row {
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  color: #0895d1;
+  margin: 10px;
+}
+
+.footer .three-columns {
+  overflow: hidden;
+}
+
+.footer .three-columns li {
+  width: 33.33333%;
+  float: left;
+  padding: 5px 0;
+}
+
+.footer img {
+  margin-right: 10px;
+}
+
+.footer .copyright {
+  background: rgb(41, 41, 41);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

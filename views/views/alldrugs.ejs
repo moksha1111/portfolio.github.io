@@ -1,0 +1,196 @@
+<!-- Start OF PPI Drugs -->
+
+<div class="container alldrugs">
+  <div class="row"> 
+    <div class="d-flex mb-2 align-items-center mtForThisOnly">
+      <h3>Proton Pump Inhibitor Drugs:</h3>
+      <a href="/categories/Proton Pump Inhibitor" class="ms-auto">View More</a>
+    </div>
+
+    <% if(newestDrugs != ''){ %>
+      <% newestDrugs.protonPumpInhibitor.forEach(function(drug, index){ %>
+        <div class="col-3 text-center">
+          <a href="/drugs/<%= drug._id %>">
+            <div>
+              <img class="category__img" src="./images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+            </div>
+            <div class="drugName">
+              <%= drug.name %>
+            </div>
+          </a> 
+      </div>
+      <% }) %>
+    <% } else { %>
+      <p>No drugs found.</p>
+    <% } %>
+  </div>
+</div>
+
+
+<!-- End OF PPI Drugs -->
+
+<!-- Start OF Analgesics Drugs -->
+
+<div class="container alldrugs">
+  <div class="row"> 
+    <div class="d-flex mb-2 align-items-center">
+      <h3>Analgesics Drugs:</h3>
+      <a href="/categories/Analgesics" class="ms-auto">View More</a>
+    </div>
+
+      <% if(newestDrugs != ''){ %>
+        <% newestDrugs.analgesics.forEach(function(drug, index){ %>
+          <div class="col-3 text-center">
+            <a href="/drugs/<%= drug._id %>">
+              <div>
+                <img class="category__img" src="./images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+              </div>
+              <div class="drugName">
+                <%= drug.name %>
+              </div>
+            </a> 
+        </div>
+        <% }) %>
+      <% } else { %>
+        <p>No drugs found.</p>
+      <% } %>
+  </div>
+</div>
+
+
+<!-- End OF ANALGESICS Drugs -->
+
+<!-- Start OF Multivitamins Drugs -->
+
+<div class="container alldrugs">
+  <div class="row"> 
+    <div class="d-flex mb-2 align-items-center">
+      <h3>Multivitamins Drugs:</h3>
+      <a href="/categories/Multivitamins" class="ms-auto">View More</a>
+    </div>
+
+      <% if(newestDrugs != ''){ %>
+        <% newestDrugs.multivitamins.forEach(function(drug, index){ %>
+          <div class="col-3 text-center">
+            <a href="/drugs/<%= drug._id %>">
+              <div>
+                <img class="category__img" src="./images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+              </div>
+              <div class="drugName">
+                <%= drug.name %>
+              </div>
+            </a> 
+        </div>
+        <% }) %>
+      <% } else { %>
+        <p>No drugs found.</p>
+      <% } %>
+  </div>
+</div>
+
+
+<!-- End OF Multivitamins Drugs -->
+
+<!-- Start OF Antibiotics Drugs -->
+
+<div class="container alldrugs">
+  <div class="row"> 
+    <div class="d-flex mb-2 align-items-center">
+      <h3>Antibiotics Drugs:</h3>
+      <a href="/categories/Antibiotics" class="ms-auto">View More</a>
+    </div>
+
+      <% if(newestDrugs != ''){ %>
+        <% newestDrugs.antibiotics.forEach(function(drug, index){ %>
+          <div class="col-3 text-center">
+            <a href="/drugs/<%= drug._id %>">
+              <div>
+                <img class="category__img" src="./images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+              </div>
+              <div class="drugName">
+                <%= drug.name %>
+              </div>
+            </a> 
+        </div>
+        <% }) %>
+      <% } else { %>
+        <p>No drugs found.</p>
+      <% } %>
+  </div>
+</div>
+
+
+<!-- End OF ANTIBIOTICS Drugs -->
+
+<!-- Start OF Antipyretic Drugs -->
+
+<div class="container alldrugs">
+  <div class="row"> 
+    <div class="d-flex mb-2 align-items-center">
+      <h3>Antipyretic Drugs:</h3>
+      <a href="/categories/Antipyretic" class="ms-auto">View More</a>
+    </div>
+
+      <% if(newestDrugs != ''){ %>
+        <% newestDrugs.antipyretic.forEach(function(drug, index){ %>
+          <div class="col-3 text-center">
+            <a href="/drugs/<%= drug._id %>">
+              <div>
+                <img class="category__img" src="./images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+              </div>
+              <div class="drugName">
+                <%= drug.name %>
+              </div>
+            </a> 
+        </div>
+        <% }) %>
+      <% } else { %>
+        <p>No drugs found.</p>
+      <% } %>
+  </div>
+</div>
+
+
+<!-- End OF Antipyretic Drugs -->
+
+<!-- Start OF Antifungals Drugs -->
+
+<div class="container alldrugs">
+  <div class="row"> 
+    <div class="d-flex mb-2 align-items-center">
+      <h3>Antifungals Drugs:</h3>
+      <a href="/categories/Antifungals" class="ms-auto">View More</a>
+    </div>
+
+      <% if(newestDrugs != ''){ %>
+        <% newestDrugs.antifungals.forEach(function(drug, index){ %>
+          <div class="col-3 text-center">
+            <a href="/drugs/<%= drug._id %>">
+              <div>
+                <img class="category__img" src="./images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
+              </div>
+              <div class="drugName">
+                <%= drug.name %>
+              </div>
+            </a> 
+        </div>
+        <% }) %>
+      <% } else { %>
+        <p>No drugs found.</p>
+      <% } %>
+  </div>
+</div>
+
+<!-- End OF Antifungals Drugs -->
+
+<%- contentFor('head') %>
+<%- include("../partials/head.ejs") %>
+
+<%- contentFor('header') %>
+<%- include('../partials/header.ejs') %>
+
+<%- contentFor('footer') %>
+<%- include("../partials/footer.ejs") %>
+
+<%- contentFor('globalscript') %>
+<%- include("../partials/globalscript.ejs") %>

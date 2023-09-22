@@ -1,0 +1,821 @@
+body{
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 7rem;
+  overflow-x: hidden;
+}
+
+body button[type="button"], input[type="submit"]{
+  background-color: #80b9bf;
+  border-color: #80b9bf;
+  border-radius: 50px
+}
+
+body button[type="button"]:hover, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:active {
+  background-color: #4eaab4 !important;
+  color: black !important;
+  border-color: #4eaab4 !important;
+  border-radius: 50px
+}
+
+html {
+  height: 100%;
+}
+:root {
+  --bs-font-sans-serif: 'Rubik', sans-serif;
+}
+
+/* start of navbar */
+
+/* #navbar .home {
+  color: #80b9bf !important;
+}
+
+#navbar .home:hover {
+  color: #4eaab4 !important;
+} */
+
+
+#mybtn {
+  position: fixed;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  bottom: 50px;
+  z-index: 999;
+  color: #164044;
+}
+
+#mybtn::before{
+  color: #164044;
+}
+
+#mybtn:hover::before{
+  color:black
+}
+
+.logo {
+  margin-left: 4.33333333%;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+header ul {
+  margin-right: 220px;
+}
+
+.search {
+  width: 39%;
+  margin-left: 8px;
+}
+
+.search input {
+  background-color: transparent;
+  border: 1px solid #ffffff75;
+  color: #328a93;
+}
+
+.search input::placeholder {
+  color: white;
+}
+
+a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.link-secondary {
+  color: #f6f5f8  !important;
+}
+
+.link-secondary:hover {
+  color: white  !important;
+}
+
+.link-secondary:focus {
+  color: white  !important;
+}
+
+.forBlackLinksOfOtherPages {
+  color: black !important;
+}
+
+.forAboutPage {
+  color: #2ce0f3 !important;
+}
+
+.forAboutPage:hover {
+  color: #2ce0f3 !important;
+}
+
+.activeLink {
+  background-color: #328a93 !important;
+  border-radius: 50%;
+}
+
+i::before {
+  color: var(--beforeBack, white);
+  transition: all 0.5s;
+}
+
+.dropme:hover i::before {
+  color: white ;
+  transform: rotate(90deg);
+}
+
+.authenication {
+  margin-right: 4.33333333%;
+}
+
+.dropme2 i {
+  margin-right: 10px;
+}
+
+.addToCart {
+  width: 100%;
+  min-height: 12%;
+  font-size: 25px;
+}
+
+.addToCart i {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.dropme2:hover i::before {
+  color: black;
+}
+
+.links {
+  margin: 0;
+}
+
+.dropdown-content .categoriesList li a {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.dropdown-content .categoriesList li a:hover {
+  background-color: #328a93;
+}
+
+/* .dropdown-content .accountContent li a {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
+
+/* end of navbar */
+
+/* <!-- START OF DROPDOWN --> */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .categoriesContent {
+  min-width: 200px;
+}
+
+.dropdown .accountContent {
+  background-color: #80b9bf;
+  border-color: #80b9bf;
+}
+
+/* .dropdown .accountContent:hover {
+
+} */
+
+.dropdown .accountContent a{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.dropdown .accountContent a:hover{
+  color: black !important;
+  background-color: #4eaab4 !important;
+  border-color: #4eaab4 !important;
+  ;
+}
+.dropdown .accountContent .firstElement a:hover,
+.dropdown .accountContent .lastElement a:hover{
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 171px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .account .dropdown-content .myAccount {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+.account .dropdown-content #btnLogout {
+  cursor: pointer;
+}
+
+/* <!-- END OF DROPDOWN --> */
+
+/* <!-- START OF BACKGROUND --> */
+.background h1 {
+  color: white;
+  text-shadow: 8px 8px 10px rgb(0, 0, 0, 1);
+}
+
+
+.background {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("/images/medicine-capsules-global-health-with-geometric-pattern-digital-remix.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.background::before {
+  content: '';
+  background: rgba(0,0,0,0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+h1 {
+  position: relative;
+}
+
+.container {
+  max-width: 1700px;
+}
+
+/* <!-- END OF BACKGROUND --> */
+
+
+/* <!-- START OF Categories in INDEX --> */
+
+.category__img {
+  height: 200px;
+  border-radius: 20px;
+  transition: 250ms all;
+  max-width: 299px;
+}
+
+.category__img:hover {
+  transform: scale(1.1);
+}
+
+
+.categories a:hover{
+  text-decoration: underline;
+}
+
+.categories h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #164044;
+}
+
+.categories .categoryName {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #328a93;
+}
+
+/* <!-- END OF Categories in INDEX --> */
+
+/* <!-- Start OF Newest Drugs in INDEX PAGE--> */
+
+
+.newest-drugs h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #164044;
+}
+
+.newest-drugs .drugName {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #328a93;
+}
+
+.newest-drugs .vm {
+  color: #328a93 !important;
+}
+
+/* <!-- END OF Newest Drugs in INDEX PAGE --> */
+
+/* <!-- START OF Categories in CATEGORIES PAGE --> */
+
+.categoriesPage h3{
+  margin-top: 120px;
+  margin-bottom: 20px;
+  color: #164044;
+}
+
+.categoriesPage .categoryName {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #328a93 !important;
+}
+
+/* <!-- END OF Categories in CATEGORIES PAGE--> */
+
+/* <!-- START OF ALL DRUGS IN EACH CATEGORY in CATEGORIES PAGE --> */
+
+.categoryDrugs h3{
+  margin-top: 120px;
+  margin-bottom: 20px;
+  color: #164044;
+}
+
+.categoryDrugs .drugName {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #328a93 !important;
+}
+
+/* <!-- END OF ALL DRUGS IN EACH CATEGORY in CATEGORIES PAGE--> */
+
+/* <!-- START OF Newest Drugs in NEWEST-DRUGS PAGE--> */
+
+.newestDrugs h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.newestDrugs .drugName {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* <!-- END OF Newest Drugs in NEWEST-DRUGS PAGE--> */
+
+/* <!-- START OF EACH Drug in drugs PAGE--> */
+
+.eachDrug h2{
+  margin-top: 120px;
+  margin-bottom: 20px;
+  color: #164044;
+}
+
+.eachDrug h4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.eachDrug .drugInfo i {
+  margin-right: 5px;
+}
+
+.eachDrug .drugInfo i::before {
+  color: black;
+}
+
+.eachDrug img {
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 60%;
+}
+
+/* <!-- END OF EACH Drug in drugs PAGE--> */
+
+/* <!-- START OF Products (alldrugs page)--> */
+
+.alldrugs .mtForThisOnly {
+  margin-top: 100px;
+}
+
+.alldrugs h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #164044;
+}
+
+.alldrugs .d-flex a {
+  color: #328a93 !important;
+}
+
+.alldrugs .drugName {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #328a93
+}
+
+/* <!-- END OF Products (alldrugs page)--> */
+
+/* <!-- Start OF about page --> */
+
+.purpose img {
+  display: block;
+  margin: 0px auto;
+  width: 70%;
+}
+
+.responsibility img {
+  display: block;
+  margin: 0px auto;
+  width: 70%;
+}
+
+.testimonials h2 {
+  color: #164044;
+}
+
+.testimonials h3 {
+  color: #164044 ;
+}
+
+.testimonials h5 {
+  color: black;
+}
+
+.testimonials .profile {
+  margin-top: 60px;
+  background-color: rgb(165, 165, 165);
+  transition: 250ms all;
+  cursor: pointer;
+  height: 80%;
+}
+
+.testimonials .profile:hover {
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+  
+}
+
+.testimonials .profile img {
+  top: -60px;
+  position: relative;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+.testimonials .profile .person {
+  width: 120px;
+  height: 120px;
+}
+
+.testimonials .profile h3 {
+  margin-top: -35px;
+}
+
+.testimonials .profile blockquote {
+  padding: 10px 10px 1px 10px;
+}
+
+/* <!-- End OF about page --> */
+
+/* <!-- START OF person info page --> */
+.personInfo h2 {
+  margin-top: 120px;
+  color: #164044 ;
+}
+
+.personInfo .fullInfo h4 {
+  margin-top: 10px;
+  line-height: 40px ;
+}
+.personInfo .imageAndName {
+  text-align: center;
+}
+
+.personInfo .imageAndName img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.accountCSS .span span{
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  color: #6c757d;
+  transition: 0.5s;
+  pointer-events: none;
+}
+/* <!-- End OF person info page --> */
+
+/* <!-- Start OF Footer --> */
+
+footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+hr {
+  width: 1400px;
+  margin: 10px auto;
+}
+
+.socialIcons {
+  text-align: center;
+  align-items: center;
+  display: grid;
+}
+
+.socialIcons svg {
+  margin-right: 10px;
+  color:gray
+}
+
+.socialIcons .bi-facebook:hover {
+  color: #3b5998;
+}
+
+.socialIcons .bi-twitter:hover {
+  color: #00acee;
+}
+
+.socialIcons .bi-github:hover {
+  color:#171515
+}
+
+.socialIcons .bi-youtube:hover {
+  color: red;
+}
+
+
+
+/* <!-- END OF Footer --> */
+
+
+
+/* .box {
+  transform: translateX(400%);
+  transition: transform 1s ease;
+}
+
+.box:nth-of-type(even){
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+} */
+
+.box {
+transition: opacity 1s;
+opacity: 0;
+}
+
+/* .box:nth-of-type(even){
+  transform: translateX(-400%);
+} */
+
+.box.show {
+  opacity: 1;
+}
+
+/* START OF CAROUSEL */
+#carouselExampleIndicators {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#carouselExampleIndicators .carousel-inner{
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+}
+
+#carouselExampleIndicators .carousel-inner:before{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: '';
+  background-color: rgba(0,0,0,0.45);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(../images/carousel1.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(../images/carousel2.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(../images/carousel3.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  padding: 20%;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item h2{
+  color: white;
+  height: auto;
+  font-size: 100px;
+  font-weight: 750;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+  color: white;
+  height: auto;
+  font-size: 20px;
+}
+
+/* END OF CAROUSEL */
+
+/* START OF SEARCH PAGE */
+
+.searchPage h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* END OF SEARCH PAGE */
+
+/* START OF CART PAGE */
+
+.cart .filledCart {
+  margin-top: 120px;
+  color: #164044;
+  text-decoration: underline;
+}
+.cart .emptyCart {
+  margin-top: 120px;
+  color: #164044;
+}
+
+.cart .emptyCart a {
+  color: #80b9bf !important; 
+}
+
+.cart .productDetail {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.cart .eachDetail {
+  display: grid;
+}
+
+.cart .cartSummary .cartSummaryContainer {
+  background: #6c757d52;
+  border-radius: 5px;
+  box-shadow: 4px 6px 6px 6px #d0d2d5;
+}
+
+.cart .imgCart {
+  max-width: 80%;
+}
+
+.cart .disabled {
+  background-color: #80b9bf;
+  border-color: #80b9bf;
+}
+
+/* END OF CART PAGE */
+
+/* START OF CHECKOUT PAGE */
+
+.checkout h2{
+  margin-top: 120px;
+  margin-bottom: 20px;
+  color: #164044;
+}
+
+.checkout h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.checkout .paymentMethod input {
+  accent-color: #249eab;
+}
+
+.checkout .comment textarea {
+  outline: none;
+}
+.checkout .comment textarea:focus {
+  border-color: #328a93;
+}
+
+.checkoutCSS .span span{
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  color: #6c757d;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+/* END OF CHECKOUT PAGE */
+
+.form-group {
+  position: relative;
+}
+
+.form-control:focus {
+  border-color: #328a93;
+  box-shadow: 0 0 0 .15rem rgb(50, 138, 147);
+  color: #328a93;
+}
+
+.login .span span{
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #6c757d;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.form-group input:valid ~ span ,
+.form-group input:focus ~ span
+{
+  color: #023d44;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.7rem;
+  top: -2px;
+  background: #80b9bf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: solid 2px #80b9bf;
+  border-right: solid 2px #80b9bf;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+#btnAccount:hover i::before {
+  color: black !important;
+}
+
+/* ------------for disable button in low stock in cart----------------------- */
+
+
+button:disabled,
+button[disabled]{
+  background-color: #80b9bf !important;
+  border-color: #80b9bf !important;
+}

@@ -1,0 +1,30 @@
+.option-box .color-option {
+  border: 4px solid red;
+}
+
+.option-box .bi-gear,
+.dropdown-item:hover,
+#test .active {
+  background-color: red;
+}
+
+.active,
+.navbar-dark .navbar-brand span,
+h1 span,
+p strong,
+.footer h3,
+.footer span {
+  color: red;
+}
+
+.dropdown-menu {
+  border-top: 3px solid red;
+}
+
+#test .active {
+  border: 3px solid red;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #470101;
+}

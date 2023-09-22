@@ -1,0 +1,32 @@
+<div class="container newest-drugs personInfo">
+  <div class="row"> 
+    <% if(typeof person !== 'undefined') { %>
+      <div class="col-12 text-center" style="text-decoration: underline;"><h2>Person Information</h1></div>
+
+
+      <div class="col-12 col-md-8 fullInfo">
+        <div class="col-12"><h4>- <%- person.name %> <%- person.information %></h4></div>
+      </div>
+      <div class="col-12 col-md-4 imageAndName">
+        <img src="/images/<%- person.image %>" class="img-fluid" alt="<%- person.name %>" loading="lazy">
+        <div class="row">
+          <div class="col-12"><h4><%- person.name %></h4></div>
+          <div class="col-12"><h4><%- person.position %></h4></div>
+        </div>
+      </div>
+
+    <% } %>
+  </div>
+</div>
+
+<%- contentFor('head') %>
+<%- include("../partials/head.ejs") %>
+
+<%- contentFor('header') %>
+<%- include('../partials/header.ejs') %>
+
+<%- contentFor('footer') %>
+<%- include("../partials/footer.ejs") %>
+
+<%- contentFor('globalscript') %>
+<%- include("../partials/globalscript.ejs") %>

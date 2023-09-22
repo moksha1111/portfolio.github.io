@@ -1,0 +1,109 @@
+<div class="container cart">
+  <div class="row">
+    <% if (productDetails != '') { %>
+      <div class="col-12 text-center filledCart">
+        <h2>Your Cart</h2>
+      </div>
+      <% var total = 0; %>
+      <% var numbering = 1; %>
+      <div class="col-md-8 text-center">
+      <div class="text-center productDetail">
+        <div class="col-md-3 eachDetail" style="align-items: center;"> 
+        </div>
+        <div class="col-md-2 eachDetail" style="align-items: center;">
+          Name
+        </div>
+        <div class="col-md-3 eachDetail" style="align-items: center;">
+          Product Quantity
+        </div>
+        <div class="col-md-2 eachDetail" style="align-items: center;">
+          Price
+        </div>
+        <div class="col-md-2 eachDetail" style="align-items: center;">
+        </div>
+      </div>
+      <% productDetails.forEach(function(productDetail, index){ %>
+        <div class="text-center productDetail">
+        <% cartProducts.forEach(function(cartProduct, index){ %>
+          <% if (productDetail._id == cartProduct.product) { %>
+            <div class="drugIdDivCart" style="display: none;"><%= productDetail._id %></div>
+            <div class="drugPriceDivCart" style="display: none;"><%= productDetail.price %></div>
+            <div class="col-md-3 eachDetail" style="display: block;">
+              <img src="/images/<%- productDetail.image %>" class="img-fluid imgCart" alt="<%- productDetail.name %>" loading="lazy">
+            </div>
+            <div class="col-md-2 eachDetail">
+              <%= productDetail.name %> 
+              <% total += parseFloat(productDetail.price) * parseFloat(cartProduct.productQuantity) %>
+            </div>
+            <div class="col-md-3 eachDetail" style="display: flex;">
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary dropme2 qtyDecrease">
+                  <i class="fa-solid fa-minus" style="margin-right: 0;"></i></button>
+              </div>
+              <div class="col-md-4">
+                <%= cartProduct.productQuantity %> 
+              </div>
+
+              <% if (cartProduct.productQuantity >= productDetail.quantity) { %>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary dropme2 qtyIncrease" disabled="">
+                  <i class="fa-solid fa-plus" style="margin-right: 0;"></i></button>
+              </div>
+              <% } else { %>
+                <div class="col-md-4">
+                  <button type="button" class="btn btn-primary dropme2 qtyIncrease">
+                    <i class="fa-solid fa-plus" style="margin-right: 0;"></i></button>
+                </div>
+              <% } %>
+
+            </div>
+            <div class="col-md-2 eachDetail">
+              <div class="priceOfAmountedProducts">
+                <%= parseFloat(productDetail.price) * parseFloat(cartProduct.productQuantity) %> EGP
+              </div>
+            </div>
+            <div class="col-md-2 eachDetail" style="display: block;">
+              <button type="button" class="btn btn-primary dropme2 deleteFromCart">
+                Remove 
+              </button>
+            </div>
+          <% } %>
+        <% }) %>
+        </div>
+      <% }) %>
+      </div>
+      <div class="col-md-4 text-center cartSummary">
+        <% if (total > 0) { %>
+          <div class="cartSummaryContainer">
+            <h4>Cart Summary</h4>
+            <p id="subTotal">Subtotal: <%= total %> EGP</p>
+            <a href="/checkout">
+              <button type="button" class="btn btn-primary dropme2 checkoutBtn">
+                Checkout
+              </button>
+            </a>
+          </div>
+        <% } %>
+      </div>
+      <% } else { %>
+        <div class="emptyCart">
+          <h3>Your cart is empty. Start shopping <a href="/alldrugs" style="text-decoration: underline;">from here</a></h3>
+        </div>
+      <% } %>
+  </div>
+</div>
+
+<%- contentFor('head') %>
+<%- include("../partials/head.ejs") %>
+
+<%- contentFor('header') %>
+<%- include('../partials/header.ejs') %>
+
+<%- contentFor('footer') %>
+<%- include("../partials/footer.ejs") %>
+
+<%- contentFor('globalscript') %>
+<%- include("../partials/globalscript.ejs") %>
+
+<%- contentFor('script') %>
+<script src="/js/script/cart.js"></script>
