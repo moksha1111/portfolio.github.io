@@ -111,9 +111,10 @@ section {
 
 .home .home-content button {
   padding: 15px 40px;
-border-radius: 20px;
-font-size: 20px;
-color: #49bfe1;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #49bfe1;
+  cursor: pointer;
 }
 
 .home .home-sci {

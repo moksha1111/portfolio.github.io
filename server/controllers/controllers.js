@@ -625,42 +625,90 @@ exports.homepage = async (req, res) => {
   res.render("landingPage", { title: common.pageTitle + " - Landing Page"});
 }
 
-exports.project1 = async (req, res) => {
-  logger.route_info("GET /project1");
-  res.render("project1", { title: common.pageTitle + " - Project 1"});
-}
-
 exports.project2 = async (req, res) => {
   logger.route_info("GET /project2");
-  res.render("project2", { title: common.pageTitle + " - Project 1"});
+  res.render("project2", { title: common.pageTitle + " - Project 2"});
 }
 
 exports.project3 = async (req, res) => {
   logger.route_info("GET /project3");
-  res.render("project3", { title: common.pageTitle + " - Project 1"});
+  res.render("project3", { title: common.pageTitle + " - Project 3"});
 }
 
 exports.project4 = async (req, res) => {
   logger.route_info("GET /project4");
-  res.render("project4", { title: common.pageTitle + " - Project 1"});
+  res.render("project4", { title: common.pageTitle + " - Project 4"});
 }
 
 exports.project5 = async (req, res) => {
   logger.route_info("GET /project5");
-  res.render("project5", { title: common.pageTitle + " - Project 1"});
+  res.render("project5", { title: common.pageTitle + " - Project 5"});
 }
 
 exports.project6 = async (req, res) => {
   logger.route_info("GET /project6");
-  res.render("project6", { title: common.pageTitle + " - Project 1"});
+  res.render("project6", { title: common.pageTitle + " - Project 6"});
 }
 
 exports.project7 = async (req, res) => {
   logger.route_info("GET /project7");
-  res.render("project7", { title: common.pageTitle + " - Project 1"});
+  res.render("project7", { title: common.pageTitle + " - Project 7"});
 }
 
+exports.project8 = async (req, res) => {
+  logger.route_info("GET /project8");
+  res.render("project8", { title: common.pageTitle + " - Project 8"});
+}
 
+exports.card1 = async (req, res) => {
+  logger.route_info("GET /card1");
+  res.render("card1", { title: common.pageTitle + " - Card 1"});
+}
+
+exports.card2 = async (req, res) => {
+  logger.route_info("GET /card2");
+  res.render("card2", { title: common.pageTitle + " - Card 2"});
+}
+
+exports.card3 = async (req, res) => {
+  logger.route_info("GET /card3");
+  res.render("card3", { title: common.pageTitle + " - Card 3"});
+}
+
+exports.card4 = async (req, res) => {
+  logger.route_info("GET /card4");
+  res.render("card4", { title: common.pageTitle + " - Card 4"});
+}
+
+exports.card5 = async (req, res) => {
+  logger.route_info("GET /card5");
+  res.render("card5", { title: common.pageTitle + " - Card 5"});
+}
+
+exports.card6 = async (req, res) => {
+  logger.route_info("GET /card6");
+  res.render("card6", { title: common.pageTitle + " - Card 6"});
+}
+
+exports.card7 = async (req, res) => {
+  logger.route_info("GET /card7");
+  res.render("card7", { title: common.pageTitle + " - Card 7"});
+}
+
+exports.card8 = async (req, res) => {
+  logger.route_info("GET /card8");
+  res.render("card8", { title: common.pageTitle + " - Card 8"});
+}
+
+exports.card9 = async (req, res) => {
+  logger.route_info("GET /card9");
+  res.render("card9", { title: common.pageTitle + " - Card 9"});
+}
+
+exports.card10 = async (req, res) => {
+  logger.route_info("GET /card10");
+  res.render("card10", { title: common.pageTitle + " - Card 10"});
+}
 
 
 
