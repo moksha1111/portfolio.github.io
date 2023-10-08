@@ -8,7 +8,7 @@ $("#btnRegister").on('click', function() {
   }, function(res) {
     if (res.error == null)
     {
-      location.href = "/";
+      location.href = "/drugs";
     }
     else
     {

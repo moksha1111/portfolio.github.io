@@ -679,8 +679,9 @@ opacity: 0;
 /* START OF SEARCH PAGE */
 
 .searchPage h3 {
-  margin-top: 20px;
+  margin-top: 120px;
   margin-bottom: 20px;
+  color: #164044;
 }
 
 /* END OF SEARCH PAGE */
