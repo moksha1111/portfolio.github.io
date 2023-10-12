@@ -62,7 +62,7 @@ header .onOffBtn {
   border-radius: 50px;
   border: 0;
   outline: none;
-  transition: background .5s, margin-left 5s;
+  /* transition: background .5s, margin-left 5s; */
 }
 
 header .onOffBtn span {

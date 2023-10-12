@@ -1,151 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 body {
-  margin-top: 100px;
+  background: hsl(212, 45%, 89%);
 }
 
-.sedans {
-  background-color: hsl(31, 77%, 52%);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+.main {
+  margin: 5% auto;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: white;
+  width: 300px;
+  height: 475px;
 }
 
-.sedans img {
-  margin-top: 50px;
-  margin-right: 220px;
+.main .container .image {
+  padding: 15px;
 }
 
-.sedans h3 {
-  margin-top: 40px;
-  margin-right: 165px;
-  color: white;
-  font-family: "Big Shoulders Display", cursive;
-  font-size: 50px;
+.main .container .image img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.sedans p {
-  text-align: initial;
-  margin-left: 33px;
-  margin-right: 91px;
-  margin-top: 40px;
-  color: hsla(0, 0%, 100%, 0.75);
-  font-family: "Lexend Deca", sans-serif;
+.main .paragraph {
+  text-align: center;
+  font-family: "Outfit", sans-serif;
 }
 
-.sedans button {
-  margin-bottom: 60px;
-  margin-top: 100px;
-  background-color: white;
-  color: hsl(31, 77%, 52%);
-  border-color: transparent;
+.main .paragraph h4 {
   font-size: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 30px;
-  margin-right: 100px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-top: 5px;
+  color: hsl(218, 44%, 22%);
 }
 
-.sedans button:hover {
-  background-color: hsl(31, 77%, 52%);
-  color: white;
-  border-color: white;
-}
-
-.suvs {
-  background-color: hsl(184, 100%, 22%);
-}
-
-.suvs img {
-  margin-top: 50px;
-  margin-right: 220px;
-}
-
-.suvs h3 {
-  margin-top: 40px;
-  margin-right: 205px;
-  color: white;
-  font-family: "Big Shoulders Display", cursive;
-  font-size: 50px;
-}
-
-.suvs p {
-  text-align: initial;
-  margin-left: 33px;
-  margin-right: 91px;
-  margin-top: 40px;
-  color: hsla(0, 0%, 100%, 0.75);
-  font-family: "Lexend Deca", sans-serif;
-}
-
-.suvs button {
-  margin-bottom: 60px;
-  margin-top: 100px;
-  background-color: white;
-  color: hsl(184, 100%, 22%);
-  border-color: transparent;
-  font-size: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 30px;
-  margin-right: 100px;
-}
-
-.suvs button:hover {
-  background-color: hsl(184, 100%, 22%);
-  color: white;
-  border-color: white;
-}
-
-.luxury {
-  background-color: hsl(179, 100%, 13%);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.luxury img {
-  margin-top: 50px;
-  margin-right: 220px;
-}
-
-.luxury h3 {
-  margin-top: 40px;
-  margin-right: 165px;
-  color: white;
-  font-family: "Big Shoulders Display", cursive;
-  font-size: 50px;
-}
-
-.luxury p {
-  text-align: initial;
-  margin-left: 33px;
-  margin-right: 91px;
-  margin-top: 40px;
-  color: hsla(0, 0%, 100%, 0.75);
-  font-family: "Lexend Deca", sans-serif;
-}
-
-.luxury button {
-  margin-bottom: 60px;
-  margin-top: 100px;
-  background-color: white;
-  color: hsl(179, 100%, 13%);
-  border-color: transparent;
-  font-size: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 30px;
-  margin-right: 100px;
-}
-
-.luxury button:hover {
-  background-color: hsl(179, 100%, 13%);
-  color: white;
-  border-color: white;
+.main .paragraph p {
+  font-size: 16px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: hsl(220, 15%, 55%);
 }

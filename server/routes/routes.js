@@ -39,9 +39,5 @@ router.get("/card3", controllers.card3);
 router.get("/card4", controllers.card4);
 router.get("/card5", controllers.card5);
 router.get("/card6", controllers.card6);
-router.get("/card7", controllers.card7);
-router.get("/card8", controllers.card8);
-router.get("/card9", controllers.card9);
-router.get("/card10", controllers.card10);
 
 module.exports = router;

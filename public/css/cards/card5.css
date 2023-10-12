@@ -1,43 +1,270 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 
 body {
-  background: hsl(212, 45%, 89%);
+  font-family: "Spartan", sans-serif;
+  background-image: url("/images/cards/card5/bg-pattern-top-desktop.svg"),
+    url("/images/cards/card5/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 left 0, bottom -150px right 0;
+  overflow: hidden;
 }
 
-.main {
-  margin: 5% auto;
+.container {
+  margin: 10% auto;
+}
+
+.container .about h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+}
+
+.container .about p {
+  color: hsl(303, 10%, 53%);
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.container .stars p {
   border: 1px solid transparent;
   border-radius: 10px;
-  background: white;
-  width: 300px;
-  height: 475px;
-}
-
-.main .container .image {
+  background: hsl(300, 24%, 96%);
   padding: 15px;
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 30px;
 }
 
-.main .container .image img {
-  width: 100%;
+.container .stars .revies {
+  margin-right: 180px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.container .stars .report {
+  margin-left: 60px;
+  margin-right: 120px;
+  position: relative;
+}
+
+.container .stars .besttech {
+  margin-left: 120px;
+  margin-right: 60px;
+  position: relative;
+}
+
+.container .stars span {
+  margin-left: 10px;
+  position: absolute;
+  bottom: 13px;
+}
+
+.container .colton {
+  background-color: hsl(300, 43%, 22%);
   border-radius: 10px;
 }
 
-.main .paragraph {
-  text-align: center;
-  font-family: "Outfit", sans-serif;
+.container .colton .name {
+  color: white;
+  margin-bottom: 0;
 }
 
-.main .paragraph h4 {
-  font-size: 20px;
-  padding-left: 35px;
-  padding-right: 35px;
-  margin-top: 5px;
-  color: hsl(218, 44%, 22%);
+.container .colton .verification {
+  color: hsl(333, 80%, 67%);
+  font-size: 12px;
 }
 
-.main .paragraph p {
-  font-size: 16px;
-  padding-left: 25px;
-  padding-right: 25px;
-  color: hsl(220, 15%, 55%);
+.container .colton .paragraph {
+  color: white;
+  padding-left: 28px;
+  padding-right: 29px;
+  font-size: 13px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.container .irene {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+}
+
+.container .irene .name {
+  color: white;
+  margin-bottom: 0;
+}
+
+.container .irene .verification {
+  color: hsl(333, 80%, 67%);
+  font-size: 12px;
+}
+
+.container .irene .paragraph {
+  color: white;
+  padding-left: 28px;
+  padding-right: 29px;
+  font-size: 13px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.container .anne {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+}
+
+.container .anne .name {
+  color: white;
+  margin-bottom: 0;
+}
+
+.container .anne .verification {
+  color: hsl(333, 80%, 67%);
+  font-size: 12px;
+}
+
+.container .anne .paragraph {
+  color: white;
+  padding-left: 28px;
+  padding-right: 29px;
+  font-size: 13px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.container .cards {
+  margin-top: 40px;
+}
+
+.container .cards .second {
+  margin-top: 40px;
+}
+
+.container .cards .third {
+  margin-top: 80px;
+}
+
+.container .cards .body {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.container .cards .head {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.container .cards .head img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+@media (max-width: 1199px){
+  .container .stars .revies {
+    margin-right: 170px;
+    font-size: 12px;
+  }
+
+  .revies img {
+    width: 12px;
+  }
+
+  .container .stars .report {
+    margin-right: 110px;
+    font-size: 12px;
+  }
+
+  .report img {
+    width: 12px;
+  }
+
+  .container .stars .besttech {
+    margin-right: 50px;
+    font-size: 12px;
+  }
+
+  .besttech img {
+    width: 12px;
+  }
+}
+
+@media (max-width: 991px){
+  body{
+    overflow: auto;
+  }
+
+  .container .cards .third {
+    margin-top: 40px;
+  }
+
+  .container .stars .revies {
+    padding-left: 105px;
+    font-size: 15px;
+  }
+
+  .revies img {
+    width: 15px;
+  }
+
+  .container .stars .report {
+    padding-left: 105px;
+    font-size: 15px;
+  }
+
+  .report img {
+    width: 15px;
+  }
+
+  .container .stars .besttech {
+    padding-left: 105px;
+    font-size: 15px;
+  }
+
+  .besttech img {
+    width: 15px;
+  }
+}
+
+@media (max-width: 767px){
+  .container .stars .revies {
+    padding-left: 15px;
+  }
+
+  .container .stars .report {
+    padding-left: 15px;
+  }
+
+  .container .stars .besttech {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 534px){
+  .container .stars .revies {
+    margin-right: 200px;
+    font-size: 12px;
+  }
+
+  .revies img {
+    width: 12px;
+  }
+
+  .container .stars .report {
+    margin-right: 140px;
+    font-size: 12px;
+  }
+
+  .report img {
+    width: 12px;
+  }
+
+  .container .stars .besttech {
+    margin-right: 80px;
+    font-size: 12px;
+  }
+
+  .besttech img {
+    width: 12px;
+  }
 }

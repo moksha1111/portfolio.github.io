@@ -690,25 +690,6 @@ exports.card6 = async (req, res) => {
   res.render("card6", { title: common.pageTitle + " - Card 6"});
 }
 
-exports.card7 = async (req, res) => {
-  logger.route_info("GET /card7");
-  res.render("card7", { title: common.pageTitle + " - Card 7"});
-}
-
-exports.card8 = async (req, res) => {
-  logger.route_info("GET /card8");
-  res.render("card8", { title: common.pageTitle + " - Card 8"});
-}
-
-exports.card9 = async (req, res) => {
-  logger.route_info("GET /card9");
-  res.render("card9", { title: common.pageTitle + " - Card 9"});
-}
-
-exports.card10 = async (req, res) => {
-  logger.route_info("GET /card10");
-  res.render("card10", { title: common.pageTitle + " - Card 10"});
-}
 
 
 

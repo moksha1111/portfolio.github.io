@@ -59,12 +59,21 @@ html {
   margin-left: 4.33333333%;
 }
 
+#menu-icon {
+  font-size: 3.6rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
 header {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header ul {
@@ -370,8 +379,9 @@ h1 {
 /* <!-- START OF Newest Drugs in NEWEST-DRUGS PAGE--> */
 
 .newestDrugs h3 {
-  margin-top: 20px;
+  margin-top: 120px;
   margin-bottom: 20px;
+  color: #164044;
 }
 
 .newestDrugs .drugName {
@@ -533,7 +543,7 @@ footer {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: -40px;
 }
 
 hr {
@@ -799,24 +809,141 @@ opacity: 0;
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
 #btnAccount:hover i::before {
   color: black !important;
 }
 
 /* ------------for disable button in low stock in cart----------------------- */
 
-
 button:disabled,
 button[disabled]{
   background-color: #80b9bf !important;
   border-color: #80b9bf !important;
+}
+
+@media(max-width: 1376px) {
+  header {
+    justify-content: flex-start !important;
+    flex-wrap: unset;
+  }
+}
+
+@media(min-width:767px) and (max-width: 1333px) {
+  .links {
+    margin-left: -125px;
+    margin-right: -50px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  #menu-icon {
+    display: block;
+    margin-right: 4.33333333%;
+  }
+
+  .forPC {
+    display: none !important;
+  }
+
+  header {
+    justify-content: space-between !important;
+  }
+
+  .navbarMenuMobile {
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 4%;
+    background-color: #62aeb7 !important;
+    transition: .25s ease;
+  }
+
+  .navbarMenuMobile.active {
+    left: 0;
+  }
+
+  .navbarMenuMobile a {
+    display: block;
+    font-size: 1rem;
+    margin: 3rem 0;
+    margin-right: 60px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .text-end {
+    text-align: left !important;
+  }
+
+  .dropdown .categoriesContent {
+    min-width: 100px;
+  }
+
+  footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -120px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width:633px){
+  .navbarMenuMobile a {
+    display: block;
+    font-size: 1rem;
+    margin: 3rem 0;
+    margin-right: 20px;
+  }
+
+  footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -120px;
+    padding-bottom: 15px;
+  }
+
+  .testimonials .profile {
+    margin-top: 80px;
+    height: 70%;
+  }
+
+  #carouselExampleIndicators .carousel-inner .carousel-item h2 {
+    font-size: 35px;
+  }
+
+  #carouselExampleIndicators .carousel-inner .carousel-item p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:576px) and (max-width: 767px){
+  .category__img {
+    height: 150px;
+  }
+
+  .testimonials .profile {
+    margin-top: 80px;
+    height: 70%;
+  }
+
+  #carouselExampleIndicators .carousel-inner .carousel-item h2 {
+    font-size: 60px;
+  }
+
+  #carouselExampleIndicators .carousel-inner .carousel-item p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:992px) and (max-width: 1400px){
+  .category__img {
+    height: 130px;
+  }
 }

@@ -87,7 +87,7 @@ section {
   padding: 0 9%;
   background: url('/images/landingpage/homeLandingPage.jpg') no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
 }
 
 .home-content {
@@ -425,6 +425,10 @@ span {
   background-color: var(--second-bg-color);
 }
 
+.cards a {
+  pointer-events: none;
+}
+
 .cards .cards-row {
   display: flex;
   flex-wrap: wrap;
@@ -468,6 +472,7 @@ span {
   margin-bottom: 2rem;
   overflow: hidden;
   z-index: 1;
+  pointer-events: all;
 }
 
 .cards-content .content::before {
@@ -514,6 +519,10 @@ span {
   padding-bottom: 5rem;
 }
 
+.project a {
+  pointer-events: none;
+}
+
 .project .project-row {
   display: flex;
   flex-wrap: wrap;
@@ -556,6 +565,7 @@ span {
   border-radius: .6rem;
   margin-bottom: 2rem;
   overflow: hidden;
+  pointer-events: all;
 }
 
 .project-content .content::before {
@@ -810,13 +820,63 @@ span {
   }
 }
 
+@media (min-width: 1451px) and (max-width: 1565px) {
+  .home-imgHover {
+    width: 50%;
+  }
+}
+
+@media (min-width: 870px) and (max-width: 1450px) {
+  .home-imgHover {
+    pointer-events: none;
+    background-color: var(--bg-color);
+    opacity: .6;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 869px) {
+  .home {
+    background: url('/images/landingpage/aboutLandingPage.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .header .logo {
+    font-size: 2rem;
+  }
+
+  .navbar a {
+    font-size: 1.3rem;
+  }
+
+  .home-imgHover {
+    pointer-events: none;
+    background-color: var(--bg-color);
+    opacity: .6;
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     background-color: var(--bg-color);
   }
 
+  .header .logo {
+    font-size: 4.5rem;
+  }
+
   #menu-icon {
     display: block;
+  }
+
+  .home {
+    background: url('/images/landingpage/aboutLandingPage.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .home-imgHover {
+    width: 100%;
   }
 
   .navbar {
@@ -852,6 +912,19 @@ span {
     font-size: 45%;
   }
 
+  .header .logo {
+    font-size: 4.5rem;
+  }
+
+  .home {
+    background: url('/images/landingpage/aboutLandingPage.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .home-imgHover {
+    width: 100%;
+  }
+
   .home-content h1{
     display: flex;
     flex-direction: column;
@@ -865,6 +938,10 @@ span {
     width: 38px;
     height: 38px;
   }
+
+  .footer {
+    padding: 2rem 5%;
+}
 }
 
 /* KEYFRAMES ANIMATION */

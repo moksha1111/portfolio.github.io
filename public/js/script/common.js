@@ -145,3 +145,13 @@ navLinks.forEach(navLink => {
     // testBtn.style.backgroundColor = "green"; // does not work because it should contain !important feature which is done by previous method
   }
 });
+
+
+// toggle icon navbar
+let menuIcon = document.querySelector('#menu-icon');
+let navbarMenuMobile = document.querySelector('.navbarMenuMobile');
+
+menuIcon.onclick = function () {
+  menuIcon.classList.toggle('bx-x')
+  navbarMenuMobile.classList.toggle('active')
+}

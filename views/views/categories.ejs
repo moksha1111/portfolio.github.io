@@ -3,7 +3,7 @@
     <% if(typeof categories !== 'undefined' && categories.length > 0) { %>
       <h3>Categories:</h3>
       <% categories.forEach(function(category, index) { %>
-      <div class="col-3 text-center">
+      <div class="col-lg-3 col-sm-6 col-12 text-center">
         <a href="/categories/<%- category.name %>">
           <div>
             <img class="category__img" src="./images/<%- category.image %>" alt="<%- category.name %>" loading="lazy">
@@ -26,7 +26,7 @@
     <% if(typeof categoryById !== 'undefined' && categoryById.length > 0) { %>
       <h3><%- categoryById[0].category %></h3>
       <% categoryById.forEach(function(drug, index){ %>
-          <div class="col-3 text-center">
+          <div class="col-lg-3 col-sm-6 col-12 text-center">
             <a href="/drugs/<%= drug._id %>">
               <div>
                 <img class="category__img" src="/images/<%= drug.image %>" alt="<%= drug.name %>" loading="lazy">
