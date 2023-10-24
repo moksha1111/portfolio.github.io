@@ -58,7 +58,8 @@ header nav a::after {
   transition: transform .5s;
 }
 
-header nav a:hover::after {
+header nav a:hover::after,
+header nav a:active {
   transform-origin: left;
   transform: scale(1);
 }
